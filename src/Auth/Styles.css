@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container Styles */
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Header Styles */
+  h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Alert Styles */
+  .alert {
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #d9534f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
