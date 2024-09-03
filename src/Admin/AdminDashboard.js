@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../Auth/firebase';
 import { signOut } from 'firebase/auth';
-
+import Sidebar from './Sidebar'; // Import the Sidebar component
 
 function AdminDashboard() {
   const navigate = useNavigate();
@@ -18,10 +18,13 @@ function AdminDashboard() {
   };
 
   return (
-    <div>
-      <h2>Admin Dashboard</h2>
-      <p>Welcome, Admin!</p>
-      <button onClick={handleLogout}>Logout</button>
+    <div style={{ display: 'flex' }}>
+      <Sidebar handleLogout={handleLogout} /> {/* Render the Sidebar here */}
+      <div style={{ marginLeft: '250px', padding: '20px', width: '100%' }}>
+        <h2>Admin Dashboard</h2>
+        <p>Welcome, Admin!</p>
+        <button onClick={handleLogout}>Logout</button>
+      </div>
     </div>
   );
 }

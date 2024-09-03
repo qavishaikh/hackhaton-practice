@@ -3,6 +3,7 @@ import Signup from './Auth/Signup';
 import AdminSignup from './Admin/AdminSignup';
 import Login from './Auth/Login';
 import AdminDashboard from './Admin/AdminDashboard';
+import AdminLogin from './Admin/AdminLogin';
 import UserDashboard from './User/UserDashboard';
 import Home from './Home'; 
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/admin-signup" element={<AdminSignup />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
           <Route path="/user-dashboard" element={<UserDashboard />} />
